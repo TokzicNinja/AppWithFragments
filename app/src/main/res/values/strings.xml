@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AppWithFragments</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+  <string name="artist_name_string">Artist Name</string>
+  <string name="album_name_string">Album Name</string>
+</resources>
