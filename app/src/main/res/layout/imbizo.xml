@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tool="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:layout_margin="8dp"
+  android:orientation="horizontal">
+
+
+  <ImageView
+      android:layout_gravity="center"
+      android:id="@+id/attraction_image_view"
+      android:layout_width="200dp"
+      android:layout_height="200dp"
+      tool:src="@drawable/ic_what_goes_around_song_art_web" />
+  
+  <LinearLayout
+      android:layout_margin="16dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    
+    <TextView
+      android:id="@+id/attraction_name_text_view"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="40dp"
+      tool:text="Imbizo" />
+    
+    <TextView
+      android:id="@+id/attraction_date_est_text_view"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      tool:text="1996" />
+    
+    <TextView
+      
+      android:id="@+id/attraction_numberOfPeople_text_view"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      tool:text="50" />
+    
+    <TextView
+      android:id="@+id/attraction_add_info_text_view"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      tool:text="This establish currently accommodates 600 people" />
+  </LinearLayout>
+</LinearLayout>
