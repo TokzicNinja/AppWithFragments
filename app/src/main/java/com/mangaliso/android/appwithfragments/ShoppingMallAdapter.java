@@ -44,12 +44,12 @@ public class ShoppingMallAdapter extends BaseAdapter
     @Override
     public View getView(int i, View view, ViewGroup viewGroup)
     {
-        LinearLayout mallLayout = (LinearLayout) inflateMall.inflate(R.layout.shopping_mall, viewGroup, false);
-        TextView mallNameView = mallLayout.findViewById(R.id.mall_name_text_view);
-        TextView mallNumberOfPeople = mallLayout.findViewById(R.id.mall_numberOfPeople_text_view);
-        TextView mallDateEst = mallLayout.findViewById(R.id.mall_date_est_text_view);
-        TextView mallAddInfo = mallLayout.findViewById(R.id.mall_add_info_text_view);
-        ImageView mallImage = mallLayout.findViewById(R.id.mall_image_view);
+        LinearLayout mallLayout = (LinearLayout) inflateMall.inflate(R.layout.list_item, viewGroup, false);
+        TextView mallNameView = mallLayout.findViewById(R.id.listItem_name_textView);
+        TextView mallNumberOfPeople = mallLayout.findViewById(R.id.listItem_numberOfPeople_textView);
+        TextView mallDateEst = mallLayout.findViewById(R.id.listItem_date_est_textView);
+        TextView mallAddInfo = mallLayout.findViewById(R.id.listItem_add_info_textView);
+        ImageView mallImage = mallLayout.findViewById(R.id.listItem_imageView);
 
         ShoppingMall currentMall  = malls.get(i);
         mallNameView.setText(currentMall.getName());

@@ -49,12 +49,12 @@ public class MyPlaceAdapter extends BaseAdapter
     @Override
     public View getView(int i, View view, ViewGroup viewGroup)
     {
-        LinearLayout myPlaceLayout = (LinearLayout) inflateAttractions.inflate(R.layout.my_place, viewGroup, false);
-        TextView myPlaceNameView = myPlaceLayout.findViewById(R.id.myPlace_name_text_view);
-        TextView myPlaceNumberOfPeople = myPlaceLayout.findViewById(R.id.myPlace_numberOfPeople_text_view);
-        TextView myPlaceDateEst = myPlaceLayout.findViewById(R.id.myPlace_date_est_text_view);
-        TextView myPlaceAddInfo = myPlaceLayout.findViewById(R.id.myPlace_add_info_text_view);
-        ImageView myPlaceImage = myPlaceLayout.findViewById(R.id.myPlace_image_view);
+        LinearLayout myPlaceLayout = (LinearLayout) inflateAttractions.inflate(R.layout.list_item, viewGroup, false);
+        TextView myPlaceNameView = myPlaceLayout.findViewById(R.id.listItem_name_textView);
+        TextView myPlaceNumberOfPeople = myPlaceLayout.findViewById(R.id.listItem_numberOfPeople_textView);
+        TextView myPlaceDateEst = myPlaceLayout.findViewById(R.id.listItem_date_est_textView);
+        TextView myPlaceAddInfo = myPlaceLayout.findViewById(R.id.listItem_add_info_textView);
+        ImageView myPlaceImage = myPlaceLayout.findViewById(R.id.listItem_imageView);
 
         MyPlace currentPlace  = varMyPlace.get(i);
         myPlaceNameView.setText(currentPlace.getName());

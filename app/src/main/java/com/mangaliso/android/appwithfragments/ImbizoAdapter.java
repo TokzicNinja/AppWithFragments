@@ -44,12 +44,12 @@ public class ImbizoAdapter extends BaseAdapter
     @Override
     public View getView(int i, View view, ViewGroup viewGroup)
     {
-        LinearLayout attractionLayout = (LinearLayout) inflateAttractions.inflate(R.layout.imbizo, viewGroup, false);
-        TextView attractionNameView = attractionLayout.findViewById(R.id.attraction_name_text_view);
-        TextView attractionNumberOfPeople = attractionLayout.findViewById(R.id.attraction_numberOfPeople_text_view);
-        TextView attractionDateEst = attractionLayout.findViewById(R.id.attraction_date_est_text_view);
-        TextView attractionAddInfo = attractionLayout.findViewById(R.id.attraction_add_info_text_view);
-        ImageView attractionImage = attractionLayout.findViewById(R.id.attraction_image_view);
+        LinearLayout attractionLayout = (LinearLayout) inflateAttractions.inflate(R.layout.list_item, viewGroup, false);
+        TextView attractionNameView = attractionLayout.findViewById(R.id.listItem_name_textView);
+        TextView attractionNumberOfPeople = attractionLayout.findViewById(R.id.listItem_numberOfPeople_textView);
+        TextView attractionDateEst = attractionLayout.findViewById(R.id.listItem_date_est_textView);
+        TextView attractionAddInfo = attractionLayout.findViewById(R.id.listItem_add_info_textView);
+        ImageView attractionImage = attractionLayout.findViewById(R.id.listItem_imageView);
 
         Imbizo currentAttraction  = imbizo.get(i);
         attractionNameView.setText(currentAttraction.getName());

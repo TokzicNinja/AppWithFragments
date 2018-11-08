@@ -40,12 +40,12 @@ public class SchoolsAdapter extends BaseAdapter {
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
 
-        LinearLayout schoolLayout = (LinearLayout) inflateSchools.inflate(R.layout.imbizo, viewGroup, false);
-        TextView schoolNameView = schoolLayout.findViewById(R.id.attraction_name_text_view);
-        TextView schoolNumberOfPeople = schoolLayout.findViewById(R.id.attraction_numberOfPeople_text_view);
-        TextView schoolDateEst = schoolLayout.findViewById(R.id.attraction_date_est_text_view);
-        TextView schoolAddInfo = schoolLayout.findViewById(R.id.attraction_add_info_text_view);
-        ImageView schoolImage = schoolLayout.findViewById(R.id.attraction_image_view);
+        LinearLayout schoolLayout = (LinearLayout) inflateSchools.inflate(R.layout.list_item, viewGroup, false);
+        TextView schoolNameView = schoolLayout.findViewById(R.id.listItem_name_textView);
+        TextView schoolNumberOfPeople = schoolLayout.findViewById(R.id.listItem_numberOfPeople_textView);
+        TextView schoolDateEst = schoolLayout.findViewById(R.id.listItem_date_est_textView);
+        TextView schoolAddInfo = schoolLayout.findViewById(R.id.listItem_add_info_textView);
+        ImageView schoolImage = schoolLayout.findViewById(R.id.listItem_imageView);
 
         Schools currentAttraction  = schools.get(i);
         schoolNameView.setText(currentAttraction.getName());
